@@ -80,6 +80,9 @@ public class App
         System.out.println("Total spirit restored after feeding: " + animal1.spiritLevel);
 
 
+
+
+
 //        System.out.println(petfood1.amount);
 //        System.out.println(petfood1.availability);
 //        System.out.println(petfood1.energyRestore);
@@ -93,11 +96,17 @@ public class App
 
         //RecreationActivity
         RecreationActivity recreation = new RecreationActivity();
-        recreation.name = "Laying";
+        recreation.name = "Caressing";
         recreation.necessaryTime = 2;
         recreation.recreationPlace ="House";
         recreation.recreationPrice = 20;
         recreation.recreationSpiritRestore = 6;
+
+
+
+        System.out.println("Total spirit before recreation activity of the dog: " + animal1.spiritLevel);
+        adopter1.animalRecreation(animal1,adopter1,recreation);
+        System.out.println("Total spirit restored after recreation activity: " + animal1.spiritLevel);
 
 //        System.out.println(recreation.name);
 //        System.out.println(recreation.necessaryTime);

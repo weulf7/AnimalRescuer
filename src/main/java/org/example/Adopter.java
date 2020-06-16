@@ -20,7 +20,11 @@ public void feed(Animal animal1,PetFood petFood,Adopter adopter1){
 
 }
 
+public void animalRecreation(Animal animal1, Adopter adopter1, RecreationActivity recreation){
+    System.out.println(adopter1.name + " is " +recreation.name + " " + animal1.name + ".");
 
+    animal1.spiritLevel = animal1.spiritLevel +4;
+}
 
 
 
