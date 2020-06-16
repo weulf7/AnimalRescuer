@@ -43,6 +43,9 @@ public class App
         animal1.necessaryTimeToRest = 8;
 
 
+
+
+
         System.out.println(animal1.healthLevel);
         System.out.println(animal1.favoriteFood);
         System.out.println(animal1.spiritLevel);
