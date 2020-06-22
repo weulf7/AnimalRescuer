@@ -15,4 +15,9 @@ public class PetFood  {
     int spiritRestore;
     String foodType;
 
+    NameOfTheFood nameOfTheFood;
+
+    public PetFood(NameOfTheFood nameOfTheFood) {
+        this.nameOfTheFood = nameOfTheFood;
+    }
 }

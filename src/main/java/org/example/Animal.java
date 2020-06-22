@@ -15,5 +15,10 @@ public class Animal  {
     double necessaryTimeToPlayWith;
     double necessaryTimeToRest;
 
+AnimalType animalType;
+
+    public Animal(AnimalType animalType) {
+        this.animalType = animalType;
+    }
 
 }

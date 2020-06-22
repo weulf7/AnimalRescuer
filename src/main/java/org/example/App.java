@@ -75,7 +75,7 @@ public class App
 
 
 
-        System.out.println("Total spirit before feedign: " +animal1.spiritLevel);
+        System.out.println("Total spirit before feeding: " +animal1.spiritLevel);
         adopter1.feed(animal1,petFood,adopter1);
         System.out.println("Total spirit restored after feeding: " + animal1.spiritLevel);
 
