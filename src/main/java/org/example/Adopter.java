@@ -47,7 +47,11 @@ public void animalRecreation(Animal animal1, Adopter adopter1, RecreationActivit
                animal1.happinessLevel+=2;
                System.out.println(name + " is " +activity.name + " with " +animal1.name +" and because it is the animals favors activity it s happiness level is restored by" +" " +animal1.happinessLevel +".");
            }
+            else{
+                animal1.happinessLevel+=1;
+               System.out.println(name + " is " +activity.name + " with " +animal1.name +" and because it is not the animals favors activity it s happiness level is restored by just" +" " +animal1.happinessLevel +".");
 
+           }
     }
 }
 

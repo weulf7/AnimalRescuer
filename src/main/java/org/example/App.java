@@ -88,7 +88,7 @@ public class App
 
         //The animals favorite activity
         AnimalActivity activity = new AnimalActivity();
-        activity.name="Walking";
+        activity.name="running";
         adopter1.entertain(animal1,activity);
 
 
