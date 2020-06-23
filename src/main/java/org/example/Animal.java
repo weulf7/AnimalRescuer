@@ -7,6 +7,8 @@ public class Animal  {
     int spiritLevel;
     String favoriteFood;
     String favoriteRecreationActivity;
+    String favoriteActivity;
+    int happinessLevel;
 
 
     //optional properties
