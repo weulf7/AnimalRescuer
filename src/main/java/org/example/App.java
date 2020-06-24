@@ -14,44 +14,44 @@ public class App
 
         Adopter adopter1 = new Adopter();
 
-        adopter1.name = "John";
-        adopter1.money = 200;
-        adopter1.age = 20;
-        adopter1.favoriteAnimal ="Dog";
-        adopter1.gender= "male";
-        adopter1.timeToPlayWithTheAnimal= 2;
+        adopter1.getName() ;
+        adopter1.getMoney();
+        adopter1.getAge();
+        adopter1.getFavoriteAnimal();
+        adopter1.getGender();
+        adopter1.getTimeToPlayWithTheAnimal();
 
 
         //Animal creation
         AnimalType animalType = new AnimalType();
         Animal animal1 = new Animal(animalType);
 
-        animal1.healthLevel = 10;
-        animal1.favoriteFood = "Bone";
-        animal1.spiritLevel = 1;
-        animal1.hungerLevel = 1 ;
-        animal1.favoritePlaceToSleep = "Couch";
-        animal1.favoriteRecreationActivity = "Laying in the couch";
-        animal1.favoriteToy = "Ball";
-        animal1.name = "Mickey";
-        animal1.necessaryTimeToPlayWith = 1;
-        animal1.necessaryTimeToRest = 8;
-        animal1.happinessLevel=1;
-        animal1.favoriteActivity="Walking";
+        animal1.getHealthLevel();
+        animal1.getFavoriteFood();
+        animal1.getSpiritLevel();
+        animal1.getHungerLevel();
+        animal1.getFavoritePlaceToSleep();
+        animal1.getFavoriteRecreationActivity();
+        animal1.getFavoriteToy();
+        animal1.getName();
+        animal1.getNecessaryTimeToPlayWith();
+        animal1.getNecessaryTimeToRest();
+        animal1.getHappinessLevel();
+        animal1.getFavoriteActivity();
 
 
         //Pet food
         NameOfTheFood nameOfTheFood = new NameOfTheFood();
 
         PetFood petFood = new PetFood(nameOfTheFood);
-        petFood.amount = 5  ;
-        petFood.availability = true;
-        petFood.energyRestore = 4;
-        petFood.name="Milk";
-        petFood.foodType ="dog food";
-        petFood.healthRestorePoint = 4;
-        petFood.price = 10;
-        petFood.spiritRestore = 3;
+        petFood.getAmount();
+        petFood.setAvailability(true);
+        petFood.getEnergyRestore();
+        petFood.getName();
+        petFood.getFoodType();
+        petFood.getHealthRestorePoint();
+        petFood.getPrice();
+        petFood.getSpiritRestore();
 
 
 
@@ -62,40 +62,50 @@ public class App
         //RecreationActivity
         RecreationName recreationName = new RecreationName();
         RecreationActivity recreation = new RecreationActivity(recreationName);
-        recreation.name = "Caressing";
-        recreation.necessaryTime = 2;
-        recreation.recreationPlace ="House";
-        recreation.recreationPrice = 20;
-        recreation.recreationSpiritRestore = 6;
-
-        //
-//        VeterinaryDoctor veterinary = new VeterinaryDoctor();
-//        veterinary.availability = true;
-//        veterinary.name ="Dr.Joseph";
-//        veterinary.specialization ="Dermotology";
-//        veterinary.treatmentPrice = 80;
-//        veterinary.treatmentTime = 2;
-//        veterinary.treatmentType = "Anesthesia";
+        recreation.getName();
+        recreation.getNecessaryTime();
+        recreation.getRecreationPlace();
+        recreation.getRecreationPrice();
+        recreation.getRecreationSpiritRestore();
 
 
+        VeterinaryDoctor veterinary = new VeterinaryDoctor();
+        veterinary.setAvailability(true);
+        veterinary.getName();
+        veterinary.getSpecialization();
+        veterinary.getTreatmentPrice();
+        veterinary.getTreatmentTime();
+        veterinary.getTreatmentType();
+
+        adopter1.setName("John");
+        animal1.setFavoriteFood("Bone");
+        animal1.setName("Mickey");
+        petFood.setName("Bone");
+        animal1.setHappinessLevel(1);
+        animal1.setFavoriteActivity("Walking");
+        AnimalActivity animalActivity = new AnimalActivity();
+        animalActivity.setName("Walking");
+        recreation.setName("peting");
 
 
 
+
+        animal1.setSpiritLevel(1);
         //Animal feeding
-        System.out.println("Total spirit before feeding: " +animal1.spiritLevel);
+        System.out.println("Total spirit before feeding: " +animal1.getSpiritLevel());
         adopter1.feed(animal1,petFood,adopter1);
-        System.out.println("Total spirit restored after feeding: " + animal1.spiritLevel);
+        System.out.println("Total spirit restored after feeding: " + animal1.getSpiritLevel());
 
         //The animals favorite activity
         AnimalActivity activity = new AnimalActivity();
-        activity.name="running";
+        activity.setName("running");
         adopter1.entertain(animal1,activity);
 
 
         //Animal recreation activity
-        System.out.println("Total spirit before recreation activity of the dog: " + animal1.spiritLevel);
+        System.out.println("Total spirit before recreation activity of the dog: " + animal1.getSpiritLevel());
         adopter1.animalRecreation(animal1,adopter1,recreation);
-        System.out.println("Total spirit restored after recreation activity: " + animal1.spiritLevel);
+        System.out.println("Total spirit restored after recreation activity: " + animal1.getSpiritLevel());
 
 
 
