@@ -3,6 +3,13 @@ package org.example;
 public class AnimalActivity {
     private String name;
 
+
+
+
+
+
+
+    //encapsulation
     public String getName() {
         return name;
     }

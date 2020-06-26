@@ -15,12 +15,18 @@ public class PetFood  {
     private int spiritRestore;
     private String foodType;
 
+
+    //aggregation
     private NameOfTheFood nameOfTheFood;
 
     public PetFood(NameOfTheFood nameOfTheFood) {
         this.nameOfTheFood = nameOfTheFood;
     }
 
+
+
+
+    //encapsulation
     public String getName() {
         return name;
     }

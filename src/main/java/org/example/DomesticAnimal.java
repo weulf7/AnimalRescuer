@@ -5,10 +5,14 @@ public class DomesticAnimal extends Animal {
     private double price;
     private String whereToPurchase;
 
-
+    //aggregation
     public DomesticAnimal(AnimalType animalType) {
         super(animalType);
     }
+
+
+
+    //encapsulation
 
     public double getPrice() {
         return price;

@@ -10,6 +10,9 @@ public class VeterinaryDoctor {
     private int treatmentTime;
     private boolean availability;
 
+
+
+    //encapsulation
     public String getName() {
         return name;
     }

@@ -17,12 +17,33 @@ public class Animal  {
     private double necessaryTimeToPlayWith;
     private double necessaryTimeToRest;
 
+
+    //aggregation
     private AnimalType animalType;
 
     public Animal(AnimalType animalType) {
         this.animalType = animalType;
     }
 
+    //overriding methods
+
+    public void spiritState(){
+        if (getSpiritLevel()>5){
+            System.out.println(getName()+" is happy because it's master is carrying about it");
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+    //encapsulation
     public String getName() {
         return name;
     }

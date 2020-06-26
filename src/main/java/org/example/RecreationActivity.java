@@ -9,12 +9,18 @@ public class RecreationActivity {
     private int recreationPrice;
     private double recreationSpiritRestore;
 
+
+    //aggregation
     private RecreationName recreationName;
 
     public RecreationActivity(RecreationName recreationName) {
         this.recreationName = recreationName;
     }
 
+
+
+
+    //encapsulation
     public String getName() {
         return name;
     }

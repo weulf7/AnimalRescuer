@@ -14,16 +14,16 @@ public class Adopter {
 
 
 
-
-public void animalRecreation(Animal animal1, Adopter adopter1, RecreationActivity recreation){
+    //Animal recreation method
+    public void animalRecreation(Animal animal1, Adopter adopter1, RecreationActivity recreation){
     System.out.println(adopter1.name + " is " +recreation.getName() + " " + animal1.getName() + ".");
 
     animal1.setSpiritLevel(animal1.getSpiritLevel()+2);
 
 }
 
-
-    public int feed(Animal animal1, PetFood petFood, Adopter adopter1) {
+    //Feeding method
+    public void feed(Animal animal1, PetFood petFood) {
 
         System.out.println( name + " is feeding " + animal1.getName() + " with" + " " +petFood.getName() + ".");
 
@@ -40,8 +40,10 @@ public void animalRecreation(Animal animal1, Adopter adopter1, RecreationActivit
             System.out.println("Because " +animal1.getName() +" is eating" +petFood.getName() + " it's spirit level is restored just with 1point");
         }
 
-        return 0;
+
     }
+
+    //Entertaining method
     public void entertain(Animal animal1,AnimalActivity activity){
            if (activity.getName().equals(animal1.getFavoriteActivity())){
                animal1.setHappinessLevel(animal1.getHappinessLevel()+2);
@@ -53,6 +55,9 @@ public void animalRecreation(Animal animal1, Adopter adopter1, RecreationActivit
 
            }
     }
+
+
+    //encapsulation
 
     public String getName() {
         return name;

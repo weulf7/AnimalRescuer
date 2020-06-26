@@ -3,6 +3,10 @@ package org.example;
 public class DogBreed {
     private String name;
 
+
+
+
+    //encapsulation
     public String getName() {
         return name;
     }
