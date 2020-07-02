@@ -17,7 +17,7 @@ public class Dog extends DomesticAnimal {
 
 
     //method overriding
-
+ 
     @Override
     public void spiritState() {
         super.spiritState();

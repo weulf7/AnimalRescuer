@@ -147,4 +147,9 @@ public class Animal  {
     public void setAnimalType(AnimalType animalType) {
         this.animalType = animalType;
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

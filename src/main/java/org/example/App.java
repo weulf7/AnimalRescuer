@@ -89,26 +89,28 @@ public class App
         animal1.setSpiritLevel(1);
 
 
-//        //Animal feeding method
-//        System.out.println("Total spirit before feeding: " +animal1.getSpiritLevel());
-//        adopter1.feed(animal1,petFood);
-//        System.out.println("Total spirit restored after feeding: " + animal1.getSpiritLevel());
-//
-//        //The animals favorite activity method
-//        AnimalActivity activity = new AnimalActivity();
-//        activity.setName("running");
-//        adopter1.entertain(animal1,activity);
-//
-//        //Animal recreation activity method
-//        System.out.println("Total spirit before recreation activity of the dog: " + animal1.getSpiritLevel());
-//        adopter1.animalRecreation(animal1,adopter1,recreation);
-//        System.out.println("Total spirit restored after recreation activity: " + animal1.getSpiritLevel());
+        //Animal feeding method
+        System.out.println("Total spirit before feeding: " +animal1.getSpiritLevel());
+        adopter1.feed(animal1,petFood);
+        System.out.println("Total spirit restored after feeding: " + animal1.getSpiritLevel());
+
+        //The animals favorite activity method
+        AnimalActivity activity = new AnimalActivity();
+        activity.setName("running");
+        adopter1.entertain(animal1,activity);
+
+        //Animal recreation activity method
+        System.out.println("Total spirit before recreation activity of the dog: " + animal1.getSpiritLevel());
+        adopter1.animalRecreation(animal1,adopter1,recreation);
+        System.out.println("Total spirit restored after recreation activity: " + animal1.getSpiritLevel());
 
 
         animal1.spiritState();
-        Dog dog1 = new Dog(animalType);
-        dog1.spiritState();
-        Cat cat = new Cat(animalType);
+        //Polymorphism
+        Animal dog = new Dog(animalType);
+        dog.spiritState();
+        //Polymorphism
+        Animal cat = new Cat(animalType);
         cat.spiritState();
 
 
